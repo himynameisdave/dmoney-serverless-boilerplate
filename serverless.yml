@@ -1,0 +1,23 @@
+service: dmoney-serverless-boilerplate
+
+provider:
+    name: aws
+    runtime: nodejs6.10
+    stage: dev
+    # Create your env file and add it to .gitignore
+    # environment: ${file(./.env.json)}
+
+functions:
+  main:
+    handler: handler.main
+    events:
+      - http:
+          path: main
+          method: get
+
+plugins:
+  - serverless-webpack
+  - serverless-offline
+
+custom:
+  webpackIncludeModules: true

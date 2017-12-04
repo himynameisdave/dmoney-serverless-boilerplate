@@ -1,0 +1,49 @@
+{
+  "name": "dmoney-serverless-boilerplate",
+  "version": "1.0.0",
+  "description": "My personal template/boilerplate for starting [Serverless](https://github.com/serverless/serverless) projects. Includes [`serverless-webpack`](https://github.com/serverless-heaven/serverless-webpack) to transpile stuff with Babel. Includes [`serverless-offline`](https://github.com/dherault/serverless-offline) so that you don't have to test by deploying.",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "npm run lint && npm run test && serverless deploy -v",
+    "lint": "eslint ./src/ --fix",
+    "start": "serverless offline start",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "dependencies": {
+    "node-fetch": "^1.7.3"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^21.2.1",
+    "serverless": "^1.24.1",
+    "serverless-offline": "^3.16.0",
+    "serverless-webpack": "^4.1.0",
+    "webpack": "^3.9.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=6.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himynameisdave/dmoney-serverless-boilerplate.git"
+  },
+  "keywords": [
+    "serverless",
+    "lambdas",
+    "aws",
+    "aws"
+  ],
+  "author": "himynameisdave",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/himynameisdave/dmoney-serverless-boilerplate"
+}
