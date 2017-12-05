@@ -1,5 +1,7 @@
 ## 🗺️ dmoney-serverless-boilerplate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/himynameisdave/dmoney-serverless-boilerplate.svg)](https://greenkeeper.io/)
+
 My personal template/boilerplate for starting JS-based [Serverless](https://github.com/serverless/serverless) projects targeted for deployment on AWS Lambda.
 
 Gets you up and running with a nice foundation, including things like:
