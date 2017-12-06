@@ -1,6 +1,6 @@
 {
   "name": "dmoney-serverless-boilerplate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "My personal template/boilerplate for starting [Serverless](https://github.com/serverless/serverless) projects. Includes [`serverless-webpack`](https://github.com/serverless-heaven/serverless-webpack) to transpile stuff with Babel. Includes [`serverless-offline`](https://github.com/dherault/serverless-offline) so that you don't have to test by deploying.",
   "main": "handler.js",
   "scripts": {
