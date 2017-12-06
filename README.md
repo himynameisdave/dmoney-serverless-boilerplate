@@ -1,4 +1,4 @@
-## 🗺️ dmoney-serverless-boilerplate
+## 🗺️ dmoney-serverless-boilerplate [![Travis Build](https://travis-ci.org/himynameisdave/dmoney-serverless-boilerplate.svg?branch=1.0.1)](https://travis-ci.org/himynameisdave/dmoney-serverless-boilerplate) [![Greenkeeper badge](https://badges.greenkeeper.io/himynameisdave/dmoney-serverless-boilerplate.svg)](https://greenkeeper.io/) [![GitHub issue last update](https://img.shields.io/github/issues/detail/last-update/himynameisdave/dmoney-serverless-boilerplate/979.svg)](https://github.com/himynameisdave/dmoney-serverless-boilerplate)
 
 My personal template/boilerplate for starting JS-based [Serverless](https://github.com/serverless/serverless) projects targeted for deployment on AWS Lambda.
 
