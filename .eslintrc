@@ -1,16 +1,11 @@
 {
-    "extends": "airbnb-base",
+    "extends": "eslint-config-himynameisdave",
     "env": {
         "node": true,
         "es6": true,
         "jest": true
     },
     "rules": {
-        "arrow-parens": 0,
-        "indent": [2, 4],
-        "max-len": 0,
-        "prefer-promise-reject-errors": 0,
-        "import/extensions": [0, "always"],
-        "import/prefer-default-export": 0
+        "no-magic-numbers": 0
     }
 }
