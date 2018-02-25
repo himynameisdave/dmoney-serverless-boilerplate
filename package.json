@@ -29,7 +29,7 @@
     "serverless": "^1.24.1",
     "serverless-offline": "^3.16.0",
     "serverless-webpack": "^4.1.0",
-    "webpack": "^3.9.1",
+    "webpack": "^4.0.0",
     "webpack-node-externals": "^1.6.0"
   },
   "engines": {
