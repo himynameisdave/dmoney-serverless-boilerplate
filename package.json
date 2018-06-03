@@ -1,6 +1,6 @@
 {
   "name": "dmoney-serverless-boilerplate",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "My personal template/boilerplate for starting [Serverless](https://github.com/serverless/serverless) projects. Includes [`serverless-webpack`](https://github.com/serverless-heaven/serverless-webpack) to transpile stuff with Babel. Includes [`serverless-offline`](https://github.com/dherault/serverless-offline) so that you don't have to test by deploying.",
   "main": "handler.js",
   "scripts": {
@@ -21,15 +21,15 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-3": "^6.24.1",
-    "eslint": "^4.16.0",
+    "eslint": "^4.19.1",
     "eslint-config-himynameisdave": "0.0.3",
     "eslint-plugin-filenames": "^1.2.0",
     "eslint-plugin-import": "^2.8.0",
-    "jest": "^22.1.4",
+    "jest": "^22.4.4",
     "serverless": "^1.24.1",
     "serverless-offline": "^3.16.0",
     "serverless-webpack": "^5.0.0",
-    "webpack": "^3.9.1",
+    "webpack": "^4.0.0",
     "webpack-node-externals": "^1.6.0"
   },
   "engines": {
