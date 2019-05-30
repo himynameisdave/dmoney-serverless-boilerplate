@@ -4,7 +4,7 @@ My personal template/boilerplate for starting JS-based [Serverless](https://gith
 
 Gets you up and running with a nice foundation, including things like:
 
-- [`serverless-webpack`](https://github.com/serverless-heaven/serverless-webpack) to transpile stuff with Babel.
+- [`ncc`](https://github.com/zeit/ncc) for simple and efficient bundling.
 - [`serverless-offline`](https://github.com/dherault/serverless-offline) so that you can test your lambda locally/don't have deploy to test.
 - [ESLint](https://eslint.org/) to keep code clean.
 - [Jest](https://github.com/facebook/jest) for unit testing.
@@ -12,11 +12,11 @@ Gets you up and running with a nice foundation, including things like:
 
 ### Using this template
 
-First, you must [install `serverless` globally](https://serverless.com/framework/docs/providers/aws/guide/installation/), then login to your to Serverless:
+First, you must [install `serverless` globally](https://serverless.com/framework/docs/providers/aws/guide/installation/)
 
 ```
 npm i -g serverless
-sls login
+sls --version
 ```
 
 You'll also want to [setup your AWS credentials](https://serverless.com/framework/docs/providers/aws/guide/credentials/) if you haven't already.
@@ -47,12 +47,12 @@ slsnew() {
 Start up the local server by running whichever of these you prefer:
 
 ```
-yarn run start
+yarn run dev
 
-npm run start
+npm run dev
 ```
 
-Your `main` lambda will now be served at [`localhost:3000/main`](http://localhost:3000/main).
+Your `main` lambda will now be served at [`localhost:4000/main`](http://localhost:4000/main).
 
 Run your tests with either of these:
 

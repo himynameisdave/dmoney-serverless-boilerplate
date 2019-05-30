@@ -1,9 +1,10 @@
 *.DS_Store
 node_modules/
 
+bin/
+
 coverage/
 .serverless/
-.webpack/
 
 *.env
 *.env.*

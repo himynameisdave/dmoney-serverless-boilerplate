@@ -1,40 +1,37 @@
 {
   "name": "dmoney-serverless-boilerplate",
-  "version": "1.3.0",
-  "description": "My personal template/boilerplate for starting [Serverless](https://github.com/serverless/serverless) projects. Includes [`serverless-webpack`](https://github.com/serverless-heaven/serverless-webpack) to transpile stuff with Babel. Includes [`serverless-offline`](https://github.com/dherault/serverless-offline) so that you don't have to test by deploying.",
+  "version": "2.0.0",
+  "description": "My personal template/boilerplate for starting Serverless projects",
   "main": "handler.js",
   "scripts": {
-    "deploy": "npm run lint && npm run test && serverless deploy -v",
+    "build": "ncc build handler.js -o bin/ -m && node postbuild.js",
+    "deploy": "npm run lint && npm run test && npm run build && serverless deploy -v",
     "lint": "eslint ./src/ --fix",
-    "start": "serverless offline start",
+    "dev": "npm run build && serverless offline start",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "node-fetch": "^2.0.0"
+    "node-fetch": "^2.6.0"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^8.2.1",
-    "babel-loader": "^7.1.2",
+    "@babel/core": "^7.4.5",
+    "@zeit/ncc": "^0.18.5",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-3": "^6.24.1",
-    "eslint": "^4.19.1",
+    "eslint": "^5.16.0",
     "eslint-config-himynameisdave": "0.0.3",
-    "eslint-plugin-filenames": "^1.2.0",
-    "eslint-plugin-import": "^2.8.0",
-    "jest": "^23.1.0",
-    "serverless": "^1.24.1",
-    "serverless-offline": "^3.16.0",
-    "serverless-webpack": "^5.0.0",
-    "webpack": "^4.0.0",
-    "webpack-node-externals": "^1.6.0"
+    "eslint-plugin-filenames": "^1.3.2",
+    "eslint-plugin-import": "^2.17.3",
+    "jest": "^24.8.0",
+    "serverless": "^1.44.1",
+    "serverless-offline": "^4.10.6"
   },
   "engines": {
-    "node": "8.10.0",
-    "yarn": "1.7.0"
+    "node": "10.16.0",
+    "yarn": ">= 1.16.0"
   },
   "repository": {
     "type": "git",
@@ -44,7 +41,12 @@
     "serverless",
     "lambdas",
     "aws",
-    "aws"
+    "aws-lambda",
+    "faas",
+    "boilerplate",
+    "node-serverless",
+    "serverless-nodejs-starter",
+    "nodejs-serverless-boilerplate"
   ],
   "author": "himynameisdave",
   "license": "GPL-3.0",
